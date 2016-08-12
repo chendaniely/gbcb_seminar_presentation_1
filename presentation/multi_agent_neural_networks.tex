@@ -1,0 +1,413 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% To use this template, copy and paste the Template folder found here an place within the folder your beamer presentation is located.
+% Make sure to include the following code as the first two lines of your document:
+% \documentclass[compress]{beamer}
+% \input{Template/SDAL_Beamer_Style.sty}
+
+% This file includes instructions on how to use the template
+% e.g., how to call up specific frame formats
+
+% The necessary packages are already loaded within the .sty document. 
+% You must add specific ones if needed depending on your needs.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[compress]{beamer}
+\input{Template/SDAL_Beamer_Style.sty}
+
+\usepackage[english]{babel}
+
+\usepackage{csquotes}
+
+\usepackage[pscoord]{eso-pic}% The zero point of the coordinate systemis the lower left corner of the page (the default).
+
+\newcommand{\placetextbox}[3]{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+	\setbox0=\hbox{#3}% Put <stuff> in a box
+	\AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+		\put(\LenToUnit{#1\paperwidth},\LenToUnit{#2\paperheight}){\vtop{{\null}\makebox[0pt][c]{#3}}}%
+	}%
+}%
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+
+
+% Template Colors: VTmaroon, VTorange, BIdarkblue, BIaquablue, BIcoolgrey, BIlightblue, BIlightgreen
+
+\title[SDAL]{\vspace{-0.85in}Changing People's Minds: Understanding Social Diffusion Dynamics Using Networked Cognitive Systems}
+\author{Daniel Chen, MPH\\ \tiny{Computational. Network. Epidemiology}}
+\date[]{September 1, 2016}
+
+% For long titles and/or subtitles, will need to use \vspace[-XXin] to align accordingly
+
+\begin{document}
+
+	\begin{frame}[BlankLogo] \frametitle{}
+		\begin{figure}
+	\centering
+	\includegraphics[height=0.9\textheight]{../phd040907s_bingo}
+	\label{fig:phd040907sbingo}
+	\end{figure}
+	
+	\end{frame}
+	
+	\begin{frame}[Title]
+		\titlepage
+	\end{frame}
+
+% If you do not want an outline, do not include this slide
+% Edit toc depth for what level you want included
+
+%	\begin{frame}[ToC] \frametitle{Outline}
+%	\setcounter{tocdepth}{2}
+%	\hfill
+%	\parbox[t]{.95\textwidth}{
+%		\begin{minipage}[c][0.75\textheight]{\textwidth}
+%			\linespread{1}
+%			\tableofcontents
+%		\end{minipage}
+%	}
+%	\end{frame}
+
+% Note on progress tracker:
+% If you do not want the progress tracker in the footer, do not use \section or \subsections
+% Progress tracker online works on Blank, Basic 1 and Basic 2 slide types
+
+% Compile twice after adding sections and subsection to get them to appear
+% Subsections are represented by the dots in the footer. Do not use sections if you do not want the dots.
+% Place subsections right above that slide to have dots highlight appropriately
+
+\section[SDAL]{SDAL}
+
+	\begin{frame}[Section] \frametitle{\vspace{-0.2in}Social \& Decision Analytics\\Laboratory}
+	\end{frame}
+
+\subsection[Social and Decision Analytics Laboratory (SDAL)]{Social and Decision Analytics Laboratory (SDAL)}
+
+	\begin{frame}[Basic2] \frametitle{The Social and Decision Analytics Laboratory}
+		Founded in 2013
+		\vspace{3mm}
+
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=2cm]{../figures/keller-sallie-140-w}
+					\caption{Sallie Keller\\Director\\Professor}
+					\label{fig:keller-sallie-140-w}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}  %%<--- here
+				\begin{figure}
+					\centering
+					\includegraphics[width=2cm]{../figures/shipp-stephanie-140-w}
+					\begin{center}
+						\caption{Stephanie Shipp\\Deputy Director\\Research Professor}
+					\end{center}
+					\label{fig:shipp-stephanie-140-w}
+				\end{figure}
+			\end{column}
+		\end{columns}
+
+		\begin{displayquote}
+		statisticians and social and behavioral scientists to embrace today’s data revolution, developing evidence-based research and quantitative methods to inform policy decision-making.
+		\end{displayquote}
+	\end{frame}
+
+	\begin{frame}[Basic2] \frametitle{The Social and Decision Analytics Laboratory}
+		\begin{figure}
+			\centering
+			\includegraphics[height=0.75\textheight]{../figures/sdal_google_maps}
+			\label{fig:sdalgooglemaps}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}[Blank] \frametitle{People}
+		\small
+		\begin{columns}
+			\begin{column}{0.3\textwidth}
+				\textbf{Research Faculty}
+				\begin{enumerate}
+					\item David Higdon (Statistics)
+					\item Viki Lancaster (Statistics)
+					\item Mark Orr (Psychology)
+					\item Aaron Schroeder (Data Science)
+					\item Gizem Korkmaz (Economics)
+				\end{enumerate}
+			\end{column}
+		
+			\begin{column}{0.3\textwidth}
+				\textbf{Post Doctoral Associates}
+				\begin{enumerate}
+					\item Kathryn Ziemer (Psychology)
+					\item Bianica Pires (Social Science)
+					\item Emily Molfino (Political Science)
+					\item Joshua Goldstein (Statistics)
+				\end{enumerate}
+			
+				\textbf{Visiting Scholars \& Collaborators:} 7
+			\end{column}
+
+			\begin{column}{0.3\textwidth}
+				\textbf{Students}
+				\begin{enumerate}
+					\item Daniel Chen (GRA: GBCB)
+					\item Adrienne Rogers (VT: Statistics)
+					\item Emily Stark (Mathematics)
+				\end{enumerate}
+				
+				\textbf{Administrative Staff}
+				\begin{enumerate}
+					\item Kimberly Lyman
+					\item Tracie Hase
+				\end{enumerate}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+\subsection[Projects]{Projects}
+
+	\begin{frame}[Basic2] \frametitle{Projects}
+		\begin{enumerate}
+			\item Assessing New Data Sources for the Federal Census
+			\item Simulating Urban Air Pollution Exposure
+			\item Collaborating to Build a Culture of Health
+			\item Leveraging Data to Enhance Emergency Response
+			\item Practicing Data Science for the Public Good
+			\item Modeling the Spread of Beliefs Through Social Media
+		\end{enumerate}
+		
+	\end{frame}
+
+\subsection[Data Science for the Public Good]{Data Science for the Public Good}
+
+	\begin{frame}[Basic2] \frametitle{Data Science for the Public Good}
+		
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item First summer for the The Data Science for the Public Good program (DSPG)
+					\item Research Experience for Undergraduates (REU) funded by NSF
+					\item Bash, SSH, \LaTeX, R, SQL, GIS, Literate Programming, Web Scraping, Git
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.9\linewidth]{../figures/data-science-for-public-good-student-photo-overview}
+					\caption{My Students! :D}
+					\label{fig:data-science-for-public-good-student-photo-overview}
+				\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+\subsection[Come Visit]{Come Visit}
+
+	\begin{frame}[Blank] \frametitle{Come Visit!}
+		\begin{columns}
+			\begin{column}{0.35\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=1\linewidth]{../figures/metro-lab-big-data-sdal-header}
+					\caption{}
+					\label{fig:metro-lab-big-data-sdal-header}
+				\end{figure}
+				
+				\begin{figure}
+					\centering
+					\includegraphics[width=1\linewidth]{../figures/sdal_pit}
+					\caption{}
+					\label{fig:sdalpit}
+				\end{figure}
+			\end{column}
+						
+			\begin{column}{0.65\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=1.0\linewidth]{../figures/sdal_gender_breakdown}
+					\caption{}
+					\label{fig:sdalgenderbreakdown}
+					\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+
+\section[Introduction]{Introduction}
+
+	\begin{frame}[Section] \frametitle{\vspace{-0.2in}Modeling the Spread of Beliefs\\Through Social Media}
+	\end{frame}
+	
+\subsection[Overview]{Overview}
+
+\begin{frame}[Basic2] \frametitle{Initial Conception}
+	\begin{itemize}
+		\item Mark Orr, Ph.D.
+		\item Columbia University Mailman School of Public Health
+		\begin{itemize}
+			\item Department of Epidemiology
+			\begin{itemize}
+				\item Sandro Galea, MD, MPH, DrPH
+			\end{itemize}
+			\item Columbia University Systems Science Program (CUSSP)
+			\begin{itemize}
+				\item Mailman School of Public Health (MSPH)
+				\item School of Engineering and Applied Sciences (SEAS)
+				\item Complex System Approaches in Population Health (CSAPH)
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[Basic2] \frametitle{Epidemiology}
+	merp: the branch of medicine that deals with the incidence, distribution, and possible control of diseases and other factors relating to health.
+\end{frame}
+
+\section{Watts}
+
+\section{Neural Networks}
+
+\section{TRA}
+
+\section{ABMs}
+
+\section{Simulations}
+
+\section{Conclusion}
+
+\section{End}
+
+\subsection{Forthcoming Works}
+	\begin{frame}[Basic2] \frametitle{Forthcoming Works}
+		\begin{itemize}
+			\item M. Orr, K. Zeimer, and D. Chen (Forthcoming, Fall 2016). Systems of Behavior and Human Health. In S. Galea \& A. El-Sayed (Eds.), Systems Science and Population Health. Oxford University Press: Oxford, UK.
+
+			\item M. Orr and D. Chen (Forthcoming, Fall 2016). Computational Models of Health Behavior. In R. Vallacher, A. Nowak, and S. Read (Eds.), Computational Models in Social Psychology. Psychology Press/Routledge: New York.
+		\end{itemize}
+	\end{frame}
+
+
+
+\subsection{Thanks!}
+
+	\begin{frame}[Basic2] \frametitle{Thanks!}
+		\begin{itemize}
+			\item Dennie
+			\item GBCB Folks
+		\end{itemize}
+	
+		\begin{itemize}
+			\item Mark Orr, PhD
+			\item Jacqueline Merrill PhD, MPH, RN, FAAN, FACMI
+		\end{itemize}
+	
+		\begin{itemize}
+			\item Mark Orr, PhD
+			\item Jacqueline Merrill PhD, MPH, RN, FAAN, FACMI
+		\end{itemize}
+	\end{frame}
+	
+\subsection{References}
+	\begin{frame}[Basic2] \frametitle{References}
+		\tiny
+		https://www.bi.vt.edu/sdal/news/student-fellows-in-national-capital-region-learn-to-apply-data-to-solutions
+	\end{frame}
+
+\subsection{Links}
+	\begin{frame}[Basic2] \frametitle{Thanks!}
+		\tiny
+
+		Slides:
+		
+		Code:
+		\begin{itemize}
+			\item https://github.com/chendaniely/multi-agent-neural-network
+			\item https://github.com/chendaniely/multidisciplinary-diffusion-model-experiments
+			\item https://github.com/chendaniely/mann2
+			\item https://github.com/chendaniely/mann2\_simulations
+			\item https://github.com/chendaniely/mann2\_analysis
+		\end{itemize}
+
+		\includegraphics[width=7mm]{../figures/font-awesome_4-6-3_twitter_256_0_007dff_none}
+		@chendaniely
+
+		\includegraphics[width=7mm]{../figures/brandico_2014-04-07_github_256_0_2c3e50_none}
+		www.github.com/chendaniely
+	\end{frame}
+
+
+
+\end{document}
+
+% Different format names are listed in title slides
+% Insert as * in \begin{frame}[*] 
+
+% For long frame titles , will need to use \vspace[-XXin] to align accordingly
+% If progress tracker gets in the way for these, can remove from that page using \begin{frame}[FORMAT_NAME,plain]
+
+% If content runs off the slide, the title will move! Split into two slides if this is the case.
+
+\begin{frame}[Blank] \frametitle{Format: Blank}
+	This is a test of the template.\\
+	The navigation bar on the bottom is optional.
+\end{frame}
+
+\begin{frame}[BlankLogo] \frametitle{Format: BlankLogo}
+	{\color{VTorange}{This is VTorange}}\\
+	{\color{VTmaroon}{This is VTmaroon}}\\
+	{\color{BIdarkblue}{This is BIdarkblue}}\\
+	{\color{BIaquablue}{This is BIaquablue}}\\
+	{\color{BIcoolgrey}{This is BIcoolgrey}}\\
+	{\color{BIlightblue}{This is BIlightblue}}\\
+	{\color{BIlightgreen}{This is BIlightgreen}}\\
+\end{frame}
+
+\subsection[Something 2]{Something 2}
+
+\begin{frame}[Basic1] \frametitle{Format: Basic1}
+	This is a long sample sentence to test the text width.\\
+	The navigation bar on the bottom is optional.
+\end{frame}
+
+\begin{frame}[Basic2] \frametitle{Format: Basic2}
+	This is sample text.
+	\begin{itemize}
+		\item Sample
+		\item This is a long sample sentence to test the text width.
+		\begin{itemize}
+			\item This is a nest listed
+			\begin{itemize}
+				\item Last level
+			\end{itemize}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[Basic3] \frametitle{Format: Basic3}
+	Still a test of the template
+\end{frame}
+
+\begin{frame}[Section] \frametitle{Format: Section}
+\end{frame}
+
+% For long section titles, use \\ and then \vspace to align
+
+\section{Test Section}
+
+\begin{frame}[Basic1Logo] \frametitle{Format: Basic1Logo}
+	{\color{VTmaroon}{This is a test of the template}}
+\end{frame}
+
+\begin{frame}[Basic2Logo] \frametitle{Format: Basic2Logo}
+	{\color{VTmaroon}{This is a test of the template}}
+\end{frame}
+
+\section[Conclusion]{Conclusion}
+
+\begin{frame}[Basic3Logo] \frametitle{Format: Basic3Logo}
+	{\color{VTmaroon}{This is a test of the template}}
+\end{frame}

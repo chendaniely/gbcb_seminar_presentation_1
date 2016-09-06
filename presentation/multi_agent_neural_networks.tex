@@ -266,7 +266,7 @@
     \end{frame}
 
 \subsection[Epidemiology III]{Epidemiology III}
-    \begin{frame}[Basic2] \frametitle{Mailman Certificates to GBCB}
+    \begin{frame}[Basic2] \frametitle{Columbia MPH Certificates $\sim$ GBCB}
         \begin{columns}
             \begin{column}{0.5\textwidth}
                 \begin{itemize}
@@ -500,7 +500,7 @@
     \end{itemize}
 \end{frame}
 
-\section{Watts}
+\section{Watts Model}
 
 \subsection{Duncan Watts}
 
@@ -533,13 +533,13 @@
 
 \subsection{A simple model of global cascades on random networks}
 
-    \begin{frame}[Basic2]{Watts Paper}
+    \begin{frame}[Basic2]{Watts 2002 Paper}
         \textit{A simple model of global cascades on random networks} (2002)
         
         \begin{itemize}
             \item Binary Decisions with Externalities (general contagion model)
             \begin{itemize}
-                \item fads, riots, crime, completing technologies, spread of innovation, conventions, and cooperation
+                \item fads, riots, crime, competing technologies, spread of innovation, conventions, and cooperation
             \end{itemize}
             \item Cascades
             \begin{itemize}
@@ -638,6 +638,10 @@
         \end{figure}
     \end{frame}
     
+        \begin{frame}[BlankLogo]
+            Larger Image: \url{https://github.com/chendaniely/gbcb_seminar_presentation_1/raw/master/figures/p_flipped_all.png}
+        \end{frame}
+    
     \begin{frame}[BlankLogo]
         \begin{figure}
             \centering
@@ -645,7 +649,6 @@
             \caption{}
             \label{fig:pflippedall}
         \end{figure}
-                    
     \end{frame}
 
 \section{TRA}
@@ -654,6 +657,7 @@
 
     \begin{frame}[Basic2]\frametitle{Expand the Watts Model}
         The Watts model can be used to model any \textbf{binary outcome}.
+        
         From a \textbf{public health} and \textbf{epidemiology} perspective,
         this outcome can be a particular \textbf{behavior or action}.
         \vspace{2mm}
@@ -663,55 +667,172 @@
         
         \vspace{3mm}
         
-        Our decision making process is not that simple.
+        However, our decision making process is not that simple.
     \end{frame}
 
 \subsection{Theory of Reasoned Action}
 
     \begin{frame}[Basic2]\frametitle{Theory of Reasoned Action (TRA)}
+        Health behavior model
+
         \begin{itemize}
             \item Martin Fishbein and Icek Ajzen 1967
             \item Behavior is determined by an individual's intention
-            \item intention comes from an individual's attitudes and social context
-            \item attitudes and social context originates from a set of beliefs
+            \item Intention comes from an individual's attitudes and social context
+            \item Attitudes and social context originates from a set of beliefs
         \end{itemize}
         
         \vspace{3mm}
         
-        beliefs $\rightarrow$ (attitudes \& social context) $\rightarrow$ intention $\rightarrow$ behavior
+        \textbf{beliefs} $\rightarrow$ (attitudes \& social context) $\rightarrow$ intention $\rightarrow$ behavior
         
     \end{frame}
-
-    \begin{frame}[Basic2]\frametitle{Theory of Reasoned Action}
-        The TRA states that a behavior is determined by an individuals intention to perform a particular behavior.  In turn, intention is determined by the individual's attitudes and social context, both of with are governed by a set of beliefs \cite{Orr2013}.  In other words: beliefs $\rightarrow$ (attitudes \& social context) $\rightarrow$ intention $\rightarrow$ (health) behavior.
+    
+    \begin{frame}[BlankLogo]
+        % But first, let me take a selfie
     \end{frame}
-%    
-%    The TRA is a prominent health behavior theory that will be used as the theoretical foundation for the neural network.  This theory states that a behavior is determined by an individuals intention to perform a particular behavior.  In turn, intention is determined by the individual's attitudes and social context, both of with are governed by a set of beliefs.  In other words: beliefs $\rightarrow$ (attitudes \& social context) $\rightarrow$ intention $\rightarrow$ behavior.  We adapt the TRA to a computational artificial neural network model using constraint satisfaction.  
-%    
-%    \subsection{Constraint Satisfaction}
-%    Constraint satisfaction (CS) puts a positive and negative component that represents the activation of a belief in an individual that is inversely proportional to one another.  The algorithm will then consolidate the inhibitory or excitatory ties between beliefs, the constraint, to calculate an individual's intention for a particular behavior \cite{Orr2013}.  Due to the dynamic, non-linear, and unequal interconnections and weights between beliefs, the neural network is an appropriate computational framework for the TRA.
-%    %individual's attitude towards a behavior is determined by beliefs of the outcome and the intention to perform a particular behavior.
 
-\subsection{Theory of Reasoned Action}
+    \begin{frame}[Basic2]\frametitle{TRA as Parallel Constraint Satisfaction}
+        \begin{columns}
+            \begin{column}{0.5\linewidth}
 
-\begin{frame}[Basic2]\frametitle{Theory of Reasoned Action}
-    content...
-\end{frame}
+                        \vspace{7mm}
+
+                        \begin{figure}
+                            \centering
+                            \includegraphics[height=0.7\textheight]{../figures/tra_nn}
+                            \caption{Orr 2013 Figure 1}
+                            \label{fig:trann}
+                        \end{figure}
+            \end{column}
+            \begin{column}{0.5\linewidth}
+                
+                \vspace{7mm}
+                
+                \begin{figure}
+                    \centering
+                    \includegraphics[height=0.7\textheight]{../figures/tra_example}
+                    \caption{Orr 2013 Figure 2}
+                \label{fig:traexample}
+\end{figure}
+
+            \end{column}
+        \end{columns}
+    \end{frame}
 
 \section{Neural Networks}
 
-\section{ABMs}
+\subsection{Neural Networks}
 
-\section{Simulations}
+    \begin{frame}[Basic2]\frametitle{Neural Network}
+        \begin{columns}
+            \begin{column}{0.5\linewidth}
+                \vspace{3mm}
+                \footnotesize
+                        \begin{itemize}
+                            \item \textbf{Logistic regression}
+                            \item The perceptron is a classic `simple' neural network.
+                            \begin{itemize}
+                                \item Feed-forward nerual network
+                                \item \textbf{Recurrent}
+                                \item ``deep learning''
+                                \begin{itemize}
+                                    \item AlphaGo vs Lee Sedol
+                                    \item Self-driving cars
+                                \end{itemize}
+                            \end{itemize}
+                            \item Psychological plausible decisions
+                            \begin{itemize}
+                                \item social processes
+                                \item experience/ memory
+                                \item influences/ dynamic
+                            \end{itemize}
+                        \end{itemize}
+            \end{column}
+            \begin{column}{0.5\linewidth}
+                \vspace{7mm}
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=0.7\linewidth]{../figures/orr_nn}
+                    \caption{Orr 2014 Figure 1}
+                    \label{fig:orrnn}
+                    \end{figure}
+            \end{column}
+        \end{columns}
+    \end{frame}
 
-\section{Conclusion}
+\subsection{Neural Network Visualization}
+
+    \begin{frame}[Basic2]\frametitle{TensorFlow Visualization}
+        
+        \vspace{7mm}
+        
+        \begin{figure}
+            \centering
+            \includegraphics[width=0.9\linewidth]{../figures/tensorflow_visualization}
+            \caption{}
+            \label{fig:tensorflowvisualization}
+        \end{figure}
+
+        
+        \url{http://playground.tensorflow.org/}
+    \end{frame}
+
+\section{Sims}
+
+\subsection{Results}
+
+    \begin{frame}[Blank]\frametitle{Results}
+        \begin{columns}
+            \begin{column}{0.5\linewidth}
+                \vspace{-7mm}
+                        \begin{figure}
+                            \centering
+                            \includegraphics[height=0.9\textheight]{../figures/mann_param_sweep}
+                            \caption{}
+                            \label{fig:mannparamsweep}
+                        \end{figure}
+            \end{column}
+            \begin{column}{0.5\linewidth}
+                Forthcoming Publication
+                
+                \begin{itemize}
+                    \item parameter sweep on NN connections
+                    \item no learning during simulation
+                    \item 7750 Simulations
+                    \item associativity
+                    \begin{itemize}
+                        \item  clustering of intention at the end of the simulation
+                    \end{itemize}
+                \end{itemize}
+            \end{column}
+        \end{columns}
+
+    \end{frame}
+
+\section{Fin}
 
 \subsection{Future Directions and Questions}
 
     \begin{frame}[Basic2]\frametitle{Future Directions and Questions}
-        content...
-    \end{frame}
+        \textbf{NSF}
+        \begin{itemize}
+            \item E-cigarettes
+            \item Twitter
+        \end{itemize}
 
+        \textbf{NYT}: Shooting Scares Show a Nation Quick to Fear the Worst
+
+       \textbf{Questions}:
+     \begin{itemize}
+            \item How to summarize the NN Simulation data
+            \begin{itemize}
+                \item Signal Decomposition/analysis
+                \item t-SNE projections to look for community movement
+            \end{itemize}
+        \end{itemize}
+    \end{frame}
+    
 \section{End}
 
 \subsection{Forthcoming Works}
@@ -732,31 +853,59 @@
 
     \begin{frame}[Basic2] \frametitle{Thanks!}
         \begin{itemize}
-            \item Dennie
-            \item GBCB Folks
+            \item Dennie Munson 
+            \item Social and Decition Analytics Laboratory
         \end{itemize}
 
         \begin{itemize}
-            \item Mark Orr, PhD
-            \item Jacqueline Merrill PhD, MPH, RN, FAAN, FACMI
+            \item Mark Orr, PhD (VT)
+            \item Aaron Schroeder, PhD (VT)
+            \item David Higdon, PHD (VT)
+            \item Jacqueline Merrill PhD, MPH, RN, FAAN, FACMI (CU Nursing)
         \end{itemize}
 
-        \begin{itemize}
-            \item Mark Orr, PhD
-            \item Jacqueline Merrill PhD, MPH, RN, FAAN, FACMI
-        \end{itemize}
+        \includegraphics[width=10mm]{../figures/nsf} \#1520359
 
     \end{frame}
     
+        \begin{frame}[Basic2]\frametitle{GBCB!}
+            \vspace{7mm}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{../figures/gbcb}
+                \caption{}
+                \label{fig:gbcb}
+            \end{figure}
+            
+        \end{frame}
+    
     \begin{frame}[Basic2] \frametitle{Thanks!}
-        \vspace{3mm}
-        \begin{figure}
-            \centering
-            \includegraphics[height=0.7\textheight]{../figures/programming-comic-latex}
-            \caption{}
-            \label{fig:programming-comic-latex}
-        \end{figure}
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \vspace{7mm}
+                
+                \begin{figure}
+                    \centering
+                    \includegraphics[height=0.7\textheight]{../figures/programming-comic-latex}
+                    \caption{}
+                    \label{fig:programming-comic-latex}
+                \end{figure}
+            \end{column}
+            \begin{column}{0.5\textwidth}
+                \vspace{7mm}
+                
+                \begin{figure}
+                    \centering
+                    \includegraphics[width=0.9\linewidth]{../figures/latex_typesetting}
+                    \caption{}
+                    \label{fig:latextypesetting}
+                \end{figure}
+            \end{column}
+        \end{columns}
     \end{frame}
+    
+
 
 \subsection{References}
     \begin{frame}[allowframebreaks, Blank]
@@ -770,18 +919,19 @@
 \subsection{Links}
     \begin{frame}[Basic2] \frametitle{Thanks!}
        \begin{columns}
-           \begin{column}{0.5\textwidth}
+           \begin{column}{0.57\textwidth}
                 \tiny
                 
-                Slides:
-                
-                Code:
+                \textbf{Slides}:\\
+                    \url{https://github.com/chendaniely/gbcb_seminar_presentation_1}
+                \vspace{2mm}
+                \textbf{Code}:
                 \begin{itemize}
                    %\item https://github.com/chendaniely/multi-agent-neural-network
                    %\item https://github.com/chendaniely/multidisciplinary-diffusion-model-experiments
-                   \item https://github.com/chendaniely/mann2
-                   \item https://github.com/chendaniely/mann2\_simulations
-                   \item https://github.com/chendaniely/mann2\_analysis
+                   \item \url{https://github.com/chendaniely/mann2}
+                   \item \url{https://github.com/chendaniely/mann2\_simulations}
+                   \item \url{https://github.com/chendaniely/mann2\_analysis}
                 \end{itemize}
                 
                 \includegraphics[width=7mm]{../figures/font-awesome_4-6-3_twitter_256_0_007dff_none}
@@ -790,14 +940,14 @@
                 \includegraphics[width=7mm]{../figures/brandico_2014-04-07_github_256_0_2c3e50_none}
                 www.github.com/chendaniely
             \end{column}
-            \begin{column}{0.5\textwidth}
+            \begin{column}{0.43\textwidth}
                 \vspace{10mm}
 
                 \begin{figure}
                     \centering
-                    \includegraphics[width=0.9\linewidth]{../figures/latex_typesetting}
+                    \includegraphics[width=0.8\linewidth]{../figures/pandas_for_everyone}
                     \caption{}
-                    \label{fig:latextypesetting}
+                    \label{fig:pandasforeveryone}
                 \end{figure}
             \end{column}
         \end{columns}
@@ -818,72 +968,3 @@ This model can be combined with agent-based models, which model health behavior 
 This new framework for epidemiological modeling of health behaviors where the agents may exhibit psychological plausible decisions all us to study the spreading of ideas within a social network.
 This will give us insights as to what drives behavioral risk factors for population health behaviors.
 
-
-% Different format names are listed in title slides
-% Insert as * in \begin{frame}[*]
-
-% For long frame titles , will need to use \vspace[-XXin] to align accordingly
-% If progress tracker gets in the way for these, can remove from that page using \begin{frame}[FORMAT_NAME,plain]
-
-% If content runs off the slide, the title will move! Split into two slides if this is the case.
-
-\begin{frame}[Blank] \frametitle{Format: Blank}
-    This is a test of the template.\\
-    The navigation bar on the bottom is optional.
-\end{frame}
-
-\begin{frame}[BlankLogo] \frametitle{Format: BlankLogo}
-    {\color{VTorange}{This is VTorange}}\\
-    {\color{VTmaroon}{This is VTmaroon}}\\
-    {\color{BIdarkblue}{This is BIdarkblue}}\\
-    {\color{BIaquablue}{This is BIaquablue}}\\
-    {\color{BIcoolgrey}{This is BIcoolgrey}}\\
-    {\color{BIlightblue}{This is BIlightblue}}\\
-    {\color{BIlightgreen}{This is BIlightgreen}}\\
-\end{frame}
-
-\subsection[Something 2]{Something 2}
-
-\begin{frame}[Basic1] \frametitle{Format: Basic1}
-    This is a long sample sentence to test the text width.\\
-    The navigation bar on the bottom is optional.
-\end{frame}
-
-\begin{frame}[Basic2] \frametitle{Format: Basic2}
-    This is sample text.
-    \begin{itemize}
-        \item Sample
-        \item This is a long sample sentence to test the text width.
-        \begin{itemize}
-            \item This is a nest listed
-            \begin{itemize}
-                \item Last level
-            \end{itemize}
-        \end{itemize}
-    \end{itemize}
-\end{frame}
-
-\begin{frame}[Basic3] \frametitle{Format: Basic3}
-    Still a test of the template
-\end{frame}
-
-\begin{frame}[Section] \frametitle{Format: Section}
-\end{frame}
-
-% For long section titles, use \\ and then \vspace to align
-
-\section{Test Section}
-
-\begin{frame}[Basic1Logo] \frametitle{Format: Basic1Logo}
-    {\color{VTmaroon}{This is a test of the template}}
-\end{frame}
-
-\begin{frame}[Basic2Logo] \frametitle{Format: Basic2Logo}
-    {\color{VTmaroon}{This is a test of the template}}
-\end{frame}
-
-\section[Conclusion]{Conclusion}
-
-\begin{frame}[Basic3Logo] \frametitle{Format: Basic3Logo}
-    {\color{VTmaroon}{This is a test of the template}}
-\end{frame}

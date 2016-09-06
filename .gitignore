@@ -157,3 +157,5 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
+/figures/mann_param_sweep.png
+/presentation/multi_agent_neural_networks.pdf
